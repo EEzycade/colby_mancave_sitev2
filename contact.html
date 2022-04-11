@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+
+   Mancave Collection Contact Page (template)
+   Author: Colby Ellsworth
+   Date:   11/22/2020
+
+  -->
+  <!-- REQUIREMENT: Metadata 11/23/20 -->
+  <meta charset="utf-8" />
+  <!-- REQUIREMENT: Keywords metadata 12/7/20 -->
+  <meta name="keywords" content="mancave, room, collection, secret" />
+  <!-- REQUIREMENT: Viewport metadata 12/7/20 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- REQUIREMENT: Author metadata 12/7/20 -->
+  <meta name="author" content="Colby Ellsworth" />
+  <!-- REQUIREMENT: Description metadata 12/7/20 -->
+  <meta name="description" content="The contact form in the Mancave Collection website" />
+  <!-- REQUIREMENT: Title 11/23/20 -->
+  <title>Mancave Collection Contact Page</title>
+  <link href="basic.css" rel="stylesheet" />
+  <link href="contactlayout.css" rel="stylesheet" />
+  <script src="rb_formsubmit.js"></script>
+</head>
+<body>
+  <header>
+    <!-- Image -->
+    <img src="mcimages/mcsign.png" alt="Mancave Collection" id="image" />
+    <h1>Mancave Collection</h1>
+      <!-- Navigation -->
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="room.html">ROOM</a></li>
+          <li><a href="collection.html">COLLECTION</a></li>
+          <li><a href="contact.html" id="thePage">CONTACT</a></li>
+        </ul>
+      </nav>
+  </header>
+  <section>
+    <h2>Mancave Collection Contact Form</h2>
+    <p>Thank you for visiting the Mancave Collection website! I hope you enjoyed your visit. Below is the contact form. Please leave your message and I will answer promptly via email. I appreciate your feedback.</p>
+    <p>The required fields are marked with an asterisk (*).</p>
+    <div id="formandimage">
+    <!-- REQUIREMENT: Form 12/7/20 -->
+    <form id="contactme" action="http://www.example.com/redball/survey" method="post">
+      <!-- REQUIREMENT: Field set -->
+      <fieldset id="visinfo">
+      <!--REQUIREMENT: Legend 12/7/20 -->
+      <legend>Visitor Information</legend>
+        <label for="fname">First Name*</label>
+        <!-- REQUIREMENT: Field label, Input boxes, Data type text 12/7/20 -->
+        <input type="text" name="firstName" id="fname" required />
+        <label for="lname">Last Name*</label>
+        <!-- REQUIREMENT: required 12/7/20 -->
+        <input type="text" name="lastName" id="lname" required />
+        <label for="vemail">Email*</label>
+        <!-- REQUIREMENT: Data type email 12/7/20 -->
+        <input type="email" name="visitEmail" id="vemail" required />
+        <label for="vphone">Phone Number</label>
+        <!-- REQUIREMENT: Pattern 12/7/20, Maxlength 12/8/20, Placeholder 12/7/20 -->
+        <input type="tel" name="visitPhone" id="vphone" placeholder="(***) ***-****"
+         maxlength="13" pattern="^\d{10}$|^(\(\d{3}\s*)?\d{3}[\s-]?\d{4}$" />
+      </fieldset>
+      <fieldset id="vismessage">
+      <legend>Message</legend>
+        <label for="expRange">Please rate your experience on this website.<br />
+         (0=awful; 10=great)</label>
+         0
+        <input type="range" name="rateExp" id="expRange"
+         value="5" step="1" min="0" max="10" />
+         10<br><!-- REQUIREMENT: Text level element br 12/7/20 -->
+        <label for="messageBox">Please type your message here:</label>
+        <!--REQUIREMENT: Textarea 12/7/20 -->        
+        <textarea name="message" id="messageBox"></textarea>
+      </fieldset>
+      <!-- REQUIREMENT: Submit and reset buttons 12/7/20 -->
+      <fieldset id="sendbuttons">
+        <input type="submit" value="Send your message" />
+        <input type="reset" value="Cancel" />
+      </fieldset>
+    </form> 
+      <!-- REQUIREMENT: Fifth image 12/7/20 -->
+      <div id="formimage">
+        <img src="mcimages/mail.jpg" alt="Mail message graphic" id="mailpic" />
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <p>Copyright &copy; Mancave Collection</p>
+    <!-- REQUIREMENT: Address tag 11/15/20 -->
+    <address>
+    <a href=mailto:cpellsworth0121@gmail.com>Colby Ellsworth</a> &nbsp; (480) 766-9339
+    </address>
+  </footer>
+</body>
+</html>

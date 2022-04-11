@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+/*
+
+  Mancave Collection Contact Page Specific CSS Styles
+  Author: Colby Ellsworth
+  Date:   11/22/2020
+
+*/
+
+/* Navigation styles */
+
+nav ul li a#thePage {
+  background-color: #FA9E25;
+  color: white;
+}
+
+/* Other styles */
+
+section > p {
+  margin: 10px;
+}
+
+/* Form styles */
+
+form#contactme {
+  width: 60%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+fieldset {
+  border: 2px solid #3EFA6D;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+fieldset > * {
+  flex: 1 1 150px;
+  margin: 5px 0px;
+}
+
+legend {
+  background-color: #FA9E25;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+textarea {
+  margin-top: 10px;
+  height: 100px;
+  width: 98%;
+}
+
+fieldset#sendbuttons {
+  margin: 10px;
+  width: 100%;
+}
+
+input[type='submit'], input[type='reset'] {
+  font-size: 1.2em;
+  margin: 5px;
+}
+
+/* Image styles */
+
+img#mailpic {
+  width: 95.5%;
+  border: 2px solid #FA9E25;
+  border-radius: 15px;
+  margin: 10px;
+  margin-top: 23px;
+}
+
+div#formandimage {
+  display: flex;
+}
+
+/* REQUIREMENT: Media query 12/12/20 */
+
+@media only screen and (max-width: 480px) {
+  div#flexbody {
+    flex-flow: row wrap;
+  }
+}

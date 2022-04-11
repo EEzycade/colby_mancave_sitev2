@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+/*
+
+  Mancave Collection Home Page Specific CSS Styles
+  Author: Colby Ellsworth
+  Date:   11/22/2020
+
+*/
+
+/* Body Layout Styles */
+
+
+div#flexbody {
+  display: flex;
+}
+
+/* Navigation styles */
+
+ul > li:first-of-type a {
+   color: white;
+   background-color: #FA9E25;
+}
+
+/* Article Styles */
+
+section {
+  flex: 2 1 35%;
+}
+
+article {
+  margin: 0px 10px;
+}
+
+article > ul li.line {
+  border-bottom: 1px solid black;
+}
+
+blockquote {
+  width: 80%;
+  margin: 0px 10%;
+}
+
+/* Image div Styles */
+
+div#imgintro {
+  flex: 2 1 35%;
+  margin: 0px 10px;
+}
+
+img.horiz {
+  display: block;
+  width: 90%;
+  margin: 10px 5%;
+  border: 3px solid #FA9E25;
+}
+
+img#vertic {
+  display: block;
+  width: 70%;
+  margin: 10px 15%;
+  border: 3px solid #FA9E25;
+}
+
+/* Aside Styles */
+
+div#about {
+  flex: 1 1 30%;
+  background-color: #FA9E25;
+  border-left: 2px black solid;
+}
+
+aside > h2 {
+  text-shadow: #3EFA6D 1px 1px 1px;
+  text-align: center;
+  color: white;
+}
+
+img#self {
+  display: block;
+  width: 96%;
+  border: 3px solid white;
+  margin-left: 1%;
+  margin-right: 3%;
+}
+
+aside {
+  margin: 0px 10px;
+  color: white;
+}
+
+aside > h3 {
+  font-family: "apple chancery";
+  text-align: center;
+  margin-right: 5px;
+}
+
+/* REQUIREMENT: Media query 12/12/20 */
+
+@media only screen and (max-width: 480px) {
+  div#flexbody {
+    flex-flow: row wrap;
+  }
+  div#about {
+    border-left: none;
+  }
+}

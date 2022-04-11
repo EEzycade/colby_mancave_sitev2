@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+/*
+
+  Mancave Collection Basic CSS Styles
+  Author: Colby Ellsworth
+  Date:   11/16/2020
+
+*/
+
+/* HTML and Body styles */
+
+html {
+  background: #FA9E25;
+  height: 100%;
+}
+
+h2 {
+  text-shadow: #3EFA6D 1px 1px 1px;
+  text-align: center;
+}
+
+/* REQUIREMENT: Reset styles 11/16/20 */
+
+/* REQUIREMENT: Border 11/16/20 */
+
+body {
+  background-color: white;
+  /* REQUIREMENT: Background */
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  min-height: 100%;  
+  margin: 0px auto;
+  min-width: 320px;
+  max-width: 1020px;  
+  width: 100%;
+  box-shadow: #3EFA6D 10px 0px 20px,
+              #3EFA6D -10px 0px 20px;
+  /* REQUIREMENT: Advanced CSS styling (box shadow) */
+  font-family: "verdana";
+}
+
+
+/* Header styles */
+
+body > header > h1 {
+  font-family: "courier new";
+  position: relative;
+  top: 28px;
+  left: 12%;
+  font-size: 3em;
+  text-shadow: #3EFA6D 1px 1px 10px;
+}
+
+img#image {
+  display: block;
+  width: 25%;
+  height: 25%;
+  flex: 0 1 200px;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+header {
+  width: 100%;
+  background-color: white;
+  border-bottom: 2px solid black;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  flex-flow: row wrap;
+  background: linear-gradient(to bottom, #FA9E25, white 75%);
+} 
+
+/* Navigation styles */
+
+nav {
+  width: 100%;
+  margin-left: -20px;
+}
+
+nav ul li {
+  background-color: #3EFA6D;
+  display: block;
+  text-align: center;
+  width: 25%;
+  list-style-type: none;
+  font-size: 1.2em; 
+  line-height: 2.3em; 
+  height: 2.3em;
+  padding: 0px 10px;
+}
+
+nav ul li a {
+  color: white;
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  font-family: "copperplate";
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+nav a:hover, nav a:active {
+  background-color: #FA9E25;
+}
+
+/* Footer styles */   
+
+footer {
+  color: black;
+  background-color: #3EFA6D;
+  padding: 10px 10px 20px 10px;
+  text-align: center;
+  border-top: 2px solid black;
+}
+
+footer > address {
+  font-style: normal;
+}
+
+/* REQUIREMENT: Media query 12/7/20 */
+
+@media only screen and (min-width: 641px) {
+   body > header > nav > ul {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+   }
+   body > header > nav > ul > li {
+      flex: 1 1 auto;
+   }
+}

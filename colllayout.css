@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+/*
+
+  Mancave Collection Home Page Specific CSS Styles
+  Author: Colby Ellsworth
+  Date:   11/22/2020
+
+*/
+
+/* Body Layout Styles */
+
+div#flexcoll {
+  display: flex;
+}
+
+/* Navigation styles */
+
+nav ul li a#thatPage {
+   background-color: #FA9E25;
+   color: white;
+}
+
+/* Aside styles */
+
+aside {
+  flex: 1 1 40%;
+  background-color: #FA9E25;
+  color: white;
+  border-right: 2px solid black;
+}
+
+aside > h2 {
+  color: white;
+}
+
+h3 {
+  text-align: center;
+}
+
+aside > p {
+  margin: 0px 10px;
+}
+
+div#how1 {
+  margin: 0px 10px;
+}
+
+div#gimages p {
+  margin: 10px 10px;
+}
+
+p#indent {
+  margin-top: 10px;
+}
+
+/* Section styles */
+
+section {
+  flex: 2 1 60%;
+}
+
+article {
+  margin: 0px 10px;
+}
+
+div#how2 {
+  margin: 0px 10px;
+}
+
+p > strong {
+  color: #FA9E25;
+}
+
+/* Image styles */
+
+div.twocol {
+  display: flex;
+}
+
+img.horiz2 {
+  display: block;
+  width: 80%;
+  margin: 10px 10%;
+  border: 3px solid #FA9E25;
+}
+
+img.horiz3 {
+  display: block;
+  width: 40%;
+  margin: 10px 5%;
+  border: 3px solid #FA9E25;
+}
+
+img#vertic3 {
+  display: block;
+  width: 30%;
+  margin: 10px 10%;
+  border: 3px solid #FA9E25;
+}
+
+img.vertic2 {
+  display: block;
+  width: 60%;
+  margin: 10px 20%;
+  border: 3px solid #FA9E25;
+}
+
+img#vertic {
+  display: block;
+  width: 80%;
+  margin: 10px 10%;
+  border: 3px solid #3EFA6D;
+}
+
+img.horiz {
+  display: block;
+  width: 90%;
+  margin: 20px 5.5% 0px 4.5%;
+  border: 3px solid #3EFA6D;
+}
+
+/* REQUIREMENT: Media query 12/12/20 */
+
+@media only screen and (max-width: 480px) {
+  div#flexcoll {
+    flex-flow: row wrap;
+  }
+  aside {
+    border-right: none;
+  }
+}
